@@ -1,0 +1,81 @@
+C++ authors: Effective C++ by Scott Meyers
+Design Pattern : Erich Gamma
+
+Why C++?
+   Detailed info is reduced amd bring systematic thinking.
+
+Errors, Exceptions and Rules:
+   Exceptions and Rules come together. Where there are rules, exceptions will be there. One has to know exception before.
+   However, there can be various erroroneous scenarios. infinite. ALl of them cannot be handled because, one can never know how the System is used from outside its boundaries.
+   We do error handling and store them for the records for future reference.(Like black box)
+
+
+
+Initializer list
+Copy Contructors
+	Usecase
+	Problems with copy contr.
+	How to disable the invokation of copy contructors.
+Parameterized Contructors
+Move semantics
+	Why is it needed. 
+           Ans: It helps in reducing the copy overhead. Useful when copy is not allowed.
+	Move semantics vs Copy constructors.
+Inheritence
+	Virtual functions and Abstract classes.
+	V-tables.
+	nm ./a.out | c++filt gives the overview of the binary generated.
+	dynamic cast.
+	Virtual destructors.
+Constant functions
+Unnamed objects, write value references, NOte: Return values of the functions are always unnamed.
+References Vs Pointers  - there is no run time difference between them.  Also no diff in the assembly code that is generated.
+Diff between Struct and Class  - only diff is default visibility
+Templates
+Lamda functions
+Design patters: 
+    Iteration 
+    factory
+    prototype 
+Operator overloading:
+	Pre inc and Post incr operator overloading.
+        Pre inc is better becuase there are less instructions executed.
+
+Auto keyword:
+     Takes the type of the rvalue. Code becomes more readable.
+
+Predicates.
+Functiontor.
+Command object.
+Function object.
+Lambdas are used for predicate.
+Functors and lamdas are samw - in the backgrouod they same. Diff is functors can be reused. We can create as many objects as needed. Butnot lamdas.Lamdas make code readable.
+
+Mplace functions.
+Game of four??
+
+
+
+Containers:
+ Why are containers needed? 
+    Ans: To anstract various implementation details from the user.
+
+  Diff types of containers
+	Lists - its implemented as doubly linked list. 
+             Random access is not efficient. For ex for accessing 1000th element, 1000 traversals are needed.
+	Vectors - Random access can be done using the index value. That is, just with the base address and index we can acess the 1000th element. But here adding new element is expecnsive.
+        Sets - implemented as Binary tree. They can be used only for the comparable types of values.
+        Forward lists - Singly linked lists.
+  
+
+       More Info on containers:
+       On physical address system 
+        - lists are better becuase small pieces are occupied.. Vectors eat up more memory.
+
+       On Virtually address system,  vectors are better than list becuase in the list small memory blocks will eat up entire page.
+
+Why do you need type for pointer declaration?
+1. to know size of the varible that is being read from the address.
+2. for pointer arithematic.
+
+
