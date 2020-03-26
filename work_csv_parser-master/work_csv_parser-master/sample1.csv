@@ -1,8 +1,0 @@
-|Signal Name   |   interval | Max_value | Min_value | Type |
------------       --------   ---------   ---------   -----
-Odometer_ST1:       10          50         60         FLOAT
-Ignition_Stat_S2:   20          7          0          UNIT8
-Ignition_Stat_S3:   30          7          0          UNIT8
-Ignition_Stat_S4:   40          7          0          UNIT8
-Ignition_Stat_S5:   50          7          0          UNIT8
-Ignition_Stat_S6:   60          7          0          UNIT8
